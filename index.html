@@ -5,18 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country Website</title>
-    <!-- Favicons -->
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
      <!--Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/normalize-fwd.css">
+<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <a class="screen-reader-text" href="site-main">Skip to content</a>
-    <div>
+    <div class="site-wrapper">
         <header class="site-header">
-            <!--Nav bar logo goes here-->
+            
             <a href="#" class="site-logo"></a>
             <nav class="site-nav" id="site-nav">
                <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false">
-                <svg><!--For hamburger Icon--></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
                </button>
                <ul>
                 <li>
@@ -33,11 +48,40 @@
         </header>
         <header class="hero-banner" id="hero-video">
             <h1>Yoho National Park</h1>
-            <video>
-                <!--Video Link goes here-->
-                <source src="" type="">
+            <video autoplay muted loop>
+                <source src="media/yoho-waterfall.mp4" type="video/mp4">
+                Your browser does not support the video.
             </video>
         </header>
+        <main id="site-main">
+            <section class="landing-cards">
+                <article class="card-explore">
+                    <div>
+                        <h2>Explore</h2>
+                        <p>Yoho National Park is a land of discovery. Its towering peaks divide the continent, while historic rivers and railways carve it's landscape.  Discover powerful waterfalls, emerald lakes, national heritage sites and a welcoming mountain community. Yoho National Park boasts towering rock walls, spectacular waterfalls and 28 peaks over 3 000 metres in height.</p>
+                    </div>
+                    <img src="media/emerald-lake.jpg" alt="Emerald Lake located in Yoho National Park, B.C">
+                </article>
+                <article class="card-First-Nations">
+                    <div>
+                        <h2>Indigenous connections</h2>
+                        <p>Prior to the arrival of Europeans, Ktunaxa and Secwépemc peoples used the area for hunting, fishing and gathering. The valleys of the Kicking Horse and Amiskwi rivers have been used for many generations as important travel corridors between the Columbia Valley and the Bow Valley and adjacent plains east of the Canadian Rockies.</p>
+                    </div>
+                    <img src="media/ktunaxa-nation.jpg" alt="Traditional fancy dress and ceremonial dancing of the Ktunaxa First Nations people">
+                </article>
+                <article class="card-history">
+                    <div>
+                        <h2>History</h2>
+                        <p>Yoho National Park is in the traditional territories of the Secwepemc and Ktunaxa First Nations. Before the establishment of the park, the Ktunaxa primarily used the area—specifically, Kicking Horse Pass—to cross the Rockies in order to access bison hunting grounds on the eastern side of the mountains. The park was created following a trip by Prime Minister John A. Macdonald and his wife Agnes through the Rockies on the newly completed Canadian Pacific Railway, Canada's first transcontinental. After his return to Ottawa, Yoho National Park was created on October 10, 1886. Glacier National Park was created on the same day, making Yoho and Glacier the second and third national parks in the country, after Rocky Mountains Park (now named Banff National Park).</p>
+                    </div>
+                    <img src="media/mountain-landscape.jpg" alt="Mountain range and river near Kicking Horse Pass, B.C">
+                </article>
+            </section>
+        </main>
     </div>
+    <footer>
+        <p class="Copyright">© Taylor Doyle 2025. For educational Purposes Only.</p>
+    </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

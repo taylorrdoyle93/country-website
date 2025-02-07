@@ -1,0 +1,74 @@
+
+
+
+
+/* General Styles
+--------------------------------------------*/
+body {
+    font-family: 'catamaran', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+h2 {
+    font-family: 'monterrat', sans-serif;
+}
+h3,
+h4,
+h5,
+h6
+
+
+/*Typography
+--------------------------------------------*/
+
+/*Header & Main Nav
+--------------------------------------------*/
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f9b738;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+.site-nav {
+    position: fixed;
+    left: -100%;
+    top: 3rem;
+    transition: left .5s ease;
+}
+
+.hero-banner h1 {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 2.5rem;
+    z-index: 10;
+}
+
+
+/* Landing Page Styles
+-----------------------------------------*/
+
+/*History Page Styles
+-----------------------------------------*/
+
+/*Explore Page Styles
+-----------------------------------------*/
+
+/*Credits Page Styles
+-----------------------------------------*/
