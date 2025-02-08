@@ -23,55 +23,74 @@
 <link rel="stylesheet" href="styles/normalize-fwd.css">
 <link rel="stylesheet" href="styles/styles.css">
 </head>
-<body>
+<body id="top">
+
     <a class="screen-reader-text" href="site-main">Skip to content</a>
+
     <div class="site-wrapper">
+
         <header class="site-header">
-            
-            <a href="#" class="site-logo"></a>
+
+            <a href="index.html" class="site-logo">
+            <img class="logo-image" src="nav-bar-logo.png">
+            </a>
+
             <nav class="site-nav" id="site-nav">
-               <button class="menu-toggle" aria-controls="header-menu" aria-expanded="false">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
-               </button>
-               <ul>
-                <li>
-                    <a href="explore.html">Explore</a>
-                </li>
-                <li>
-                    <a href="history.html">History</a>
-                </li>
-                <li>
-                    <a href="credits.html">Credits</a>
-                </li>
+        
+                <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+
+                <label for="menu-toggle" class="menu-toggle" aria-label="Menu Toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                </label>
+
+               <ul class="nav-menu" id="header-menu">
+                    <li><a href="explore.html">Explore</a></li>
+                    <li><a href="history.html">History</a></li>
+                    <li><a href="credits.html">Credits</a></li>
                </ul>
+
             </nav>
+
         </header>
-        <header class="hero-banner" id="hero-video">
-            <h1>Yoho National Park</h1>
-            <video autoplay muted loop>
-                <source src="media/yoho-waterfall.mp4" type="video/mp4">
-                Your browser does not support the video.
-            </video>
-        </header>
-        <main id="site-main">
+
+        <main class="site-main">
+
+            <section class="hero-banner" id="main-hero-image">
+                <h1>YOHO NATIONAL PARK</h1>
+                <img src="media/emerald-lake.jpg" alt="Emerald Lake located in Yoho National Park, B.C">
+            </section>
+        
             <section class="landing-cards">
+
                 <article class="card-explore">
                     <div>
-                        <h2>Explore</h2>
+                        <a href="explore.html">
+                            <h2>Explore</h2>
+                        </a>
                         <p>Yoho National Park is a land of discovery. Its towering peaks divide the continent, while historic rivers and railways carve it's landscape.  Discover powerful waterfalls, emerald lakes, national heritage sites and a welcoming mountain community. Yoho National Park boasts towering rock walls, spectacular waterfalls and 28 peaks over 3 000 metres in height.</p>
                     </div>
-                    <img src="media/emerald-lake.jpg" alt="Emerald Lake located in Yoho National Park, B.C">
+                    <video autoplay muted loop>
+                        <source src="media/yoho-waterfall.mp4" type="video/mp4">
+                        Your browser does not support the video.
+                    </video>
                 </article>
+
                 <article class="card-First-Nations">
                     <div>
-                        <h2>Indigenous connections</h2>
+                        <a href="history.html">
+                            <h2>Indigenous connections</h2>
+                        </a>
                         <p>Prior to the arrival of Europeans, Ktunaxa and Secwépemc peoples used the area for hunting, fishing and gathering. The valleys of the Kicking Horse and Amiskwi rivers have been used for many generations as important travel corridors between the Columbia Valley and the Bow Valley and adjacent plains east of the Canadian Rockies.</p>
                     </div>
                     <img src="media/ktunaxa-nation.jpg" alt="Traditional fancy dress and ceremonial dancing of the Ktunaxa First Nations people">
                 </article>
+
                 <article class="card-history">
                     <div>
-                        <h2>History</h2>
+                        <a href="history.html">
+                            <h2>History</h2>
+                        </a>
                         <p>Yoho National Park is in the traditional territories of the Secwepemc and Ktunaxa First Nations. Before the establishment of the park, the Ktunaxa primarily used the area—specifically, Kicking Horse Pass—to cross the Rockies in order to access bison hunting grounds on the eastern side of the mountains. The park was created following a trip by Prime Minister John A. Macdonald and his wife Agnes through the Rockies on the newly completed Canadian Pacific Railway, Canada's first transcontinental. After his return to Ottawa, Yoho National Park was created on October 10, 1886. Glacier National Park was created on the same day, making Yoho and Glacier the second and third national parks in the country, after Rocky Mountains Park (now named Banff National Park).</p>
                     </div>
                     <img src="media/mountain-landscape.jpg" alt="Mountain range and river near Kicking Horse Pass, B.C">
@@ -79,6 +98,7 @@
             </section>
         </main>
     </div>
+
     <footer>
         <p class="Copyright">© Taylor Doyle 2025. For educational Purposes Only.</p>
     </footer>

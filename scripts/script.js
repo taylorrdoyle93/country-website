@@ -1,7 +1,10 @@
-const hamburger = document.getElementById( 'menu-toggle' );
-const links  = document.getElementById( 'site-nav-links' );
 
-hamburger.addEventListener( 'click', function() {
-    links.classList.toggle('active');
-    hamburger.classList.toggle('active');
-});
+
+
+// const menuToggle = document.querySelector('menu-toggle');
+// const siteNav  = document.querySelector('site-nav-links');
+
+// menuToggle.addEventListener( 'click', () => {
+    // siteNav.classList.toggle('active');
+    // menuToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+// });
