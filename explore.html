@@ -44,6 +44,7 @@
                 </label>
 
                <ul class="nav-menu" id="header-menu">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="explore.html">Explore</a></li>
                     <li><a href="history.html">History</a></li>
                     <li><a href="credits.html">Credits</a></li>
@@ -55,14 +56,88 @@
 
         <main class="site-main">
 
-            <section class="history-connections" id="history">
-                <h1>EXPLORE: Points of Interest </h1>
+            <section class="explore-yoho" id="explore-page-hero-text">
+                <h1>EXPLORE YOHO NATIONAL PARK</h1>
                 <img src="media/mountain-landscape.jpg" alt="">
             </section>
-        
+
+            <section>
+                <article>
+                    <div>
+                        <h2>Activities and Experiences</h2>
+                        <p>Experience alpine adventures within the reach of the casual visitor. Explore the vast backcountry and rest in scenic campgrounds. Challenge yourself with a day hike to half-billion-year-old fossil beds. Immerse yourself in history and heritage in Yoho National Park.</p>
+                    </div>
+                </article>
+            </section>
+
+            <div class="season-grid-container">
+
+                <section class="grid-item">
+                    <figure>
+                        <img src="media/yoho-spring.jpeg" alt="Alpine flowers blooming in Yoho National Park">
+                    </figure>
+                    <div class="grid-text">
+                        <h4>Spring</h4>
+                        <p>Spring marks the beginning of early low elevation hiking season! This is also a great time to test your outdoor skills and go camping if you're not afraid of frosty mornings. If you want to avoid the crowds of the warmer months, spring exploring in Yoho is definitely for you.</p>
+                    </div>
+                </section>
+
+                <section class="grid-item">
+                    <figure>
+                        <img src="media/yoho-summer.webp" alt="Retnal dock on an alpine lake with red canoes">
+                    </figure>
+                    <div class="grid-text">
+                        <h4>Summer</h4>
+                        <p>The most popular time to visit Yoho is undoubtedly summer! This is an excellent time of year to visit for warmer temperatures, higher elevation hiking, backpacking, and sweeping snow capped mountain views. At this time the lakes have thawwed, and you can go swimming, as well as participate in guided canoe tours across several of the lakes within the park.</p>
+                    </div>
+                </section>
+
+                <section class="grid-item">
+                    <figure>
+                        <img src="media/yoho-autumn.jpg" alt="A photo that captures the beauty of Larch Season in all its glory and wonderfully golden hues.">
+                    </figure>
+                    <div class="grid-text">
+                        <h4>Autumn</h4>
+                        <p>This is a wonderful time of year to visit the park if you are particularly fond of fall colors and crisp weather. Autumn in Yoho marks the beginning of Larch season, which only lasts for a few weeks! At this time of year higher elevation hiking is not recommended without the appropriate gear, as weather conditions are unpredictable and change quite rapidly.</p>
+                    </div>
+                </section>
+
+                <section class="grid-item">
+                    <figure>
+                        <img src="media/yoho-winter.jpg" alt="A snow covered cabin on a lake, nestled in towering frosted pine trees.">
+                    </figure>
+                    <div class="grid-text">
+                        <h4>Winter</h4>
+                        <p>One of the best things to do during the winter months in Yoho National Park, is go skiing at Kicking Horse Resort. December in particular is the best time of year to lace up and go skating on any of the frozen lakes in the area before they're completely covered in snow!</p>
+                    </div>
+                </section>
+
+            </div>
+            
+            <form action="submit-form" method="post" id="intake-form">
+                <fieldset>
+                    <legend>Subscribe to our Newsletter!</legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Submit</button>
+            </form>
         </main>
 
     </div>
+
+    <footer>
+        <p class="Copyright">© Taylor Doyle 2025. For educational Purposes Only.</p>
+    </footer>
+    <script src="scripts/script.js"></script>
     
 </body>
 </html>
