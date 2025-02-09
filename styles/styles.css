@@ -93,10 +93,6 @@ a:active {
     color:#f9b738;
 }
 
-a:focus {
-    outline-style: 1px dotted #f9b738;
-}
-
 /*Header, Main Nav, & Logo Styling
 --------------------------------------------*/
 
